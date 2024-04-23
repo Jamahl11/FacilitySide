@@ -15,10 +15,10 @@ const Sidebar = () => {
 
   const navigate = useNavigate();
   const menuItems = [
-    { name: "Month View", path: "/" },
-    { name: "Week View", path: "/week" },
-    { name: "Day View", path: "/day" },
-    { name: "Join Events", path: "/community" },
+    { name: "Activity Manager", path: "/ActivityManager" },
+    { name: "Resident View", path: "/ResidentView" },
+//    { name: "Day View", path: "/day" },
+//    { name: "Join Events", path: "/community" },
   ];
 
   const location = useLocation();
@@ -112,7 +112,7 @@ const Sidebar = () => {
       <div className="sidebar-logo">
         <img src={logo}/>
       </div>
-      <h3>Bridge</h3>
+      <h3>T.O.M.</h3>
       <nav className="nav">
         <ul>
           {menuItems.map((item, index) => (
@@ -124,12 +124,12 @@ const Sidebar = () => {
           ))}
         </ul>
       </nav>
-      <button
+      {/* <button
         className={`add-event-btn ${focusedIndex === menuItems.length ? 'focused' : ''}`}
         onClick={togglePopup}>
         Add Event
       </button>
-      {showPopup && <AddEventPopup closePopup={togglePopup} />}
+      {showPopup && <AddEventPopup closePopup={togglePopup} />} */}
     </div>
   );
 };

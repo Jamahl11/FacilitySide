@@ -1,3 +1,8 @@
+body, html {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f4f4;
+}
+
 .calendar-view {
   display: flex;
   flex-direction: column;
@@ -87,3 +92,215 @@
   border-color: #999; /* Optional: change border color */
 }
 
+/* App.css : code added by Deni */
+
+.search-input {
+  margin: 20px 0;
+  padding: 10px;
+  width: calc(100% - 22px);
+  font-size: 16px;
+}
+
+.user-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Adjusts the space between blocks */
+}
+
+.user-block {
+  cursor: pointer;
+  padding: 10px 450px;
+  background-color: #537293; /* Blue background */
+  color: white; /* White text */
+  text-align: center;
+  border-radius: 20px; /* Rounded corners for the bubble effect */
+  transition: background-color 0.3s;
+}
+
+.user-block:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+.calendar-container {
+  margin-top: 20px;
+}
+
+.close-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #dc3545; /* Red background */
+  color: white; /* White text */
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.close-btn:hover {
+  background-color: #c82333; /* Darker red on hover */
+}
+
+.back-arrow {
+  font-size: 24px;
+  cursor: pointer;
+  padding: 10px;
+  margin-bottom: 20px;
+  display: inline-block; /* Makes the arrow inline for better control */
+  user-select: none; /* Prevents text selection on double click */
+}
+
+.calendar-container h2 {
+  margin-bottom: 20px; /* Adds space between title and calendar */
+}
+
+/* Add below your existing styles */
+
+.user-photo {
+  width: 40px; /* Adjust size as needed */
+  height: 40px; /* Adjust size as needed */
+  border-radius: 50%; /* Makes the photo circular */
+  object-fit: cover; /* Ensures the image covers the area well */
+  margin-right: 10px; /* Adds some spacing between the photo and the name */
+  vertical-align: middle; /* Aligns the photo with the text */
+}
+
+/* App.css */
+
+.app-container {
+  padding: 20px;
+}
+
+.user-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* Creates a 5-column grid */
+  gap: 20px; /* Adjusts the space between grid items */
+}
+
+.user-profile {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-photo {
+  width: 100%; /* Makes the photo fill the container */
+  aspect-ratio: 1; /* Keeps a square aspect ratio */
+  object-fit: cover; /* Ensures the photo covers the area */
+  border-radius: 10px; /* Optional: rounds the corners of the photo */
+}
+
+.name-banner {
+  background-color: #2C3E50; /* Blue background */
+  color: white; /* White text */
+  text-align: center;
+  width: 100%;
+  padding: 5px 0;
+  border-radius: 0 0 10px 10px; /* Rounds the bottom corners */
+}
+
+.back-arrow {
+  font-size: 24px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.calendar-container h2 {
+  margin-bottom: 20px;
+}
+.search-input {
+  width: 100%;
+  padding: 10px;
+  margin: 20px 0;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.profile-calendar-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.calendar-container, .activities-container {
+  width: 48%; /* Adjust based on your layout preferences */
+}
+
+.user-list-page-container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.user-list-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.search-input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.user-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.user-item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.user-item-image {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.user-item-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.user-item-content button {
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.user-activities {
+  padding-left: 60px;
+  margin-top: 10px;
+}
+
+.activity-list {
+  list-style: none;
+  padding: 0;
+}
+
+.activity-item {
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #f4f4f4;
+}
+
+.activity-title {
+  font-weight: bold;
+}
+
+.activity-details {
+  margin-top: 5px;
+}
+
+.activity-detail {
+  margin-top: 5px;
+}

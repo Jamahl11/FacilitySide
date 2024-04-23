@@ -28,7 +28,7 @@ body, html {
 }
 
 .sidebar.minimized {
-  width: 100px; /* Reduced width when minimized */
+  width: 200px; /* Reduced width when minimized */
   padding: 20px 10px; /* Adjust padding to keep content centered */
 }
 

@@ -1,0 +1,26 @@
+.popup-content {
+  padding: 20px;
+  width: 400px; /* Adjust width as needed */
+  height: 400px; /* Adjust height as needed */
+}
+
+input[type="text"],
+input[type="date"],
+input[type="time"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+.buttons {
+  text-align: right;
+}
+
+.buttons button {
+  margin-left: 10px;
+}
